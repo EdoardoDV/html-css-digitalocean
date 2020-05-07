@@ -11,9 +11,25 @@ h1, h2 {
 h2 {
   font-size: 20px;
 }
+.ms_blue {
+  background: linear-gradient(#0041BF, #00239E)
+}
 .ms_grey {
   background: #F3F5F9;
   text-align:center;
+}
+.ms_white {
+  background: white;
+  text-align:center;
+}
+.ms_white h2 {
+  color: black;
+}
+.ms_white p {
+  color:grey;
+}
+.ms_item {
+  text-align: left;
 }
 /* Fine Stili Generici */
 
@@ -70,7 +86,7 @@ header li a {
 }
 .description_p {
   font-size: 20px;
-  color: #BBCBFD
+  color: rgba(160, 160, 160, 0.8);
 }
 .ms_jumbo_blue .form {
   color: black;
@@ -115,4 +131,24 @@ header li a {
 }
 .ms_jumbo.ms_grey a:after {
   content:">"
+}
+@media screen and (max-width:991px) {
+  .ms_jumbo.ms_grey img {
+    height: 80px;
+  }
+  .ms_jumbo.ms_grey div:last-of-type > img {
+    height: 40px;
+    margin-top: 25px;
+  }
+}
+/* Fine Jumbotron */
+/* Fine Header */
+
+/* Main */
+
+.ms_item li {
+  list-style: none;
+}
+.ms_item li:before {
+  content:"|";
 }
