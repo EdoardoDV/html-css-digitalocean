@@ -12,7 +12,8 @@ h2 {
   font-size: 20px;
 }
 .ms_blue {
-  background: linear-gradient(#0041BF, #00239E)
+  background: linear-gradient(#0041BF, #00239E);
+  color:white;
 }
 .ms_grey {
   background: #F3F5F9;
@@ -30,6 +31,12 @@ h2 {
 }
 .ms_item {
   text-align: left;
+}
+.ms_item p {
+  color:black;
+}
+ul {
+  padding-left:0;
 }
 /* Fine Stili Generici */
 
@@ -129,7 +136,10 @@ header li a {
   height: 20px;
   margin-top:15px;
 }
-.ms_jumbo.ms_grey a:after {
+.ms_jumbo.ms_grey a:after,
+.ms_item a:after,
+.cities a:after,
+.rockerbox a:after {
   content:">"
 }
 @media screen and (max-width:991px) {
@@ -145,10 +155,72 @@ header li a {
 /* Fine Header */
 
 /* Main */
-
+/* Deploy */
 .ms_item li {
   list-style: none;
 }
 .ms_item li:before {
   content:"|";
 }
+/* Fine Deploy */
+
+/* Dev */
+.ms_grey .screenshot img {
+  height: 200px;
+  margin-bottom: 50px;
+}
+.screenshot i {
+  line-height:200px;
+  font-size: 50px;
+}
+.ms_grey .description {
+  margin-bottom: 100px;
+}
+.description_p.black {
+  color: black;
+}
+
+.selection li {
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+  padding:5px;
+  border: 1px solid #1A78FF;
+  border-radius:50%;
+  background: inherit;
+  transition: all 200ms ease-in;
+}
+
+.selection li:hover {
+  background: #1A78FF;
+}
+/* Fine Dev */
+
+/* Features */
+/* Fine Features */
+
+/* Service */
+.cities .col-md-6 .row {
+  text-align:left;
+  font-size: 12px;
+  border-bottom: 1px solid white;
+}
+.cities a{
+  color: lightblue;
+  font-size: 8px;
+}
+/* Fine Service */
+
+/* Development */
+.rockerbox {
+  background:white;
+}
+.screenshot .rb_arrow i{
+  line-height: 250px;
+}
+.screenshot .rockerbox img {
+  height: 40px;
+  margin: 10px 0;
+}
+/* Fine Development */
+/* Fine Main */
