@@ -95,6 +95,9 @@ header li a {
   font-size: 20px;
   color: rgba(160, 160, 160, 0.8);
 }
+.white {
+  color:rgba(255,255,255,0.6);
+}
 .ms_jumbo_blue .form {
   color: black;
   text-align: center;
@@ -205,6 +208,9 @@ header li a {
   font-size: 12px;
   border-bottom: 1px solid white;
 }
+.cities .col-md-6 .row:last-of-type{
+  border-bottom:0;
+}
 .cities a{
   color: lightblue;
   font-size: 8px;
@@ -214,6 +220,7 @@ header li a {
 /* Development */
 .rockerbox {
   background:white;
+  margin-bottom: 15px;
 }
 .screenshot .rb_arrow i{
   line-height: 250px;
@@ -222,5 +229,153 @@ header li a {
   height: 40px;
   margin: 10px 0;
 }
+.description .btn_create{
+  font-size:15px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
 /* Fine Development */
 /* Fine Main */
+
+/* Footer */
+footer {
+  background: #031C4E;
+  color: lightgrey;
+  font-size: 10px;
+  text-align: left;
+}
+footer a {
+  color: inherit;
+}
+footer p {
+  margin:0;
+}
+footer .titles {
+  font-size: 12px;
+  color: white;
+}
+footer .p_grey {
+  color: grey;
+}
+footer img {
+  height: 20px;
+}
+footer li {
+  list-style: none;
+}
+footer > div li {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+}
+footer .margin {
+  margin: 20px 0;
+}
+/* Fine Footer */
+
+/* Messaggio */
+.ms_chat {
+  position:fixed;
+  text-align: left;
+  bottom:0;
+  right:0;
+}
+.ms_chat p {
+  margin:0;
+}
+.ms_text {
+  background: white;
+  display:inline-block;
+  width: 25vw;
+  padding: 10px;
+  position: absolute;
+  top:-75px;
+  right:5px;
+  border-radius: 5px;
+  margin-right: 80px;
+  /* opacity: 0; */
+  transition: all 500ms;
+}
+.ms_icon {
+  background: linear-gradient(#006AFF, #0026A0);
+  display: inline-block;
+  position: absolute;
+  top:-75px;
+  right:5px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.ms_icon img {
+  height: 25px;
+}
+.plus_two {
+  position: fixed;
+  bottom: 54px;
+  right:3px;
+  background: red;
+  font-weight: 800;
+  color: white;
+  line-height: 23px;
+  height:25px;
+  width:25px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+@media screen and (max-width:990px) {
+  .ms_chat {
+    position:fixed;
+    text-align: left;
+    bottom:0;
+    left:0;
+  }
+  .ms_chat p {
+    font-size: 5px;
+    margin:0;
+  }
+  .ms_text {
+    background: white;
+    text-align: center;
+    display:inline-block;
+    font-size: 15px;
+    width: 5vw;
+    padding: 5px;
+    position: absolute;
+    top: -170px;
+    right: -70px;
+    border-radius: 5px;
+    margin-right: 80px;
+    /* opacity: 0; */
+    transition: all 500ms;
+  }
+  .ms_icon {
+    background: linear-gradient(#006AFF, #0026A0);
+    display: inline-block;
+    position: absolute;
+    top:-75px;
+    right:5px;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  .ms_icon img {
+    height: 25px;
+  }
+  .plus_two {
+    position: fixed;
+    bottom: 63px;
+    right:5px;
+    background: red;
+    font-weight: 800;
+    color: white;
+    line-height: 13px;
+    height:15px;
+    width:15px;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+}
+
+.ms_chat .ms_icon:hover + .ms_chat .ms_text {
+  /* opacity: 1; */
+}
+/* Fine Messaggio */
